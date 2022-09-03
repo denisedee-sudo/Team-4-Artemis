@@ -25,35 +25,35 @@
   Above code makes it so that an element gets larger on hover.
   */
 /* Below code makes adds colored text hover  */
-.hover-gradient-carmine {
+.hover-carmine {
     transition: .27s;
   }
   
-.hover-gradient-carmine:hover {
+.hover-carmine:hover {
     color: #F14444 !important;
   }
 
-  .hover-gradient-jindigo {
+  .hover-jindigo {
     transition: .27s;
   }
   
-.hover-gradient-jindigo:hover {
+.hover-jindigo:hover {
     color: #2D3E4B !important;
   }
 
-  .hover-gradient-bubbles {
+  .hover-bubbles {
     transition: .27s;
   }
   
-.hover-gradient-bubbles:hover {
+.hover-bubbles:hover {
     color: #E8F6FF !important;
   }
 
-  .hover-gradient-maxy {
+  .hover-maxy {
     transition: .27s;
   }
   
-.hover-gradient-maxy:hover {
+.hover-maxy:hover {
     color: #F4F83B !important;
   }
 /* Above code makes adds colored text hover  */
