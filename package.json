@@ -1,0 +1,22 @@
+{
+  "name": "team-4-capstone",
+  "version": "1.0.0",
+  "description": "This website is currently under construction",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/denisedee-sudo/Team-4-Capstone.git"
+  },
+  "author": "Ise",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/denisedee-sudo/Team-4-Capstone/issues"
+  },
+  "homepage": "https://github.com/denisedee-sudo/Team-4-Capstone#readme",
+  "dependencies": {
+    "bootstrap": "^5.2.0"
+  }
+}
