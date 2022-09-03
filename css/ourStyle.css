@@ -1,4 +1,17 @@
-  /* 
+/* Custom Fonts Start*/
+      /*  CSS rules to specify families:
+      font-family: 'Josefin Sans', sans-serif;
+      font-family: 'Playfair Display', serif;
+      */
+      @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&family=Playfair+Display&display=swap');
+      .text-play {
+        font-family: 'Playfair Display', serif !important;
+      }
+      .text-jsan {
+        font-family: 'Josefin Sans', sans-serif !important;
+      }
+/* Custom Fonts End*/
+/* 
   Below code makes it so that an element gets larger on hover.
   */
   .hover-big {
