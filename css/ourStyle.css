@@ -15,11 +15,11 @@
   Below code makes it so that an element gets larger on hover.
   */
   .hover-big {
-    transition: .29s;
+    transition: .27s;
   }
   
   .hover-big:hover {
-    transform: scale(1.05) !important; 
+    transform: scale(1.07) !important; 
   }
   /* 
   Above code makes it so that an element gets larger on hover.
