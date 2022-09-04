@@ -18,11 +18,6 @@
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="bar-toggle">
-            <!-- <div class="navbar-nav p-3">
-                <a class="nav-link active text-bubbles" href="#">Page 1</a>
-                <a class="nav-link active text-bubbles" href="#">Page 2</a>
-                <a class="nav-link active text-bubbles" href="#">Page 3</a>
-            </div> -->
             <ul class="navbar-nav text-center">
                 <li class="nav-item ">
                     <a class="nav-link active text-bubbles hover-maxy hover-big" href="">Home</a>
@@ -56,7 +51,7 @@
         </div>
         <form class="input-group p-2" style="max-width:400px" action="">
             <input class="form-control" type="text">
-            <button class="btn btn-jindigo hover-maxy"><i class="fa-solid fa-magnifying-glass"></i>   Search </button>
+            <button class="btn btn-jindigo  hover-maxy"><i class="fa-solid fa-magnifying-glass"></i>   Search </button>
         </form>
     </nav>
     <br><br><br>
@@ -72,6 +67,38 @@
         </div>
         <div class="col-1"></div>
     </div>
+    <!-- Start of Messenger Plugin  -->
+            <!-- Messenger Chat Plugin Code -->
+            <div id="fb-root"></div>
+
+            <!-- Your Chat Plugin code -->
+            <div id="fb-customer-chat" class="fb-customerchat">
+            </div>
+
+            <script>
+            var chatbox = document.getElementById('fb-customer-chat');
+            chatbox.setAttribute("page_id", "101599836032258");
+            chatbox.setAttribute("attribution", "biz_inbox");
+            </script>
+
+            <!-- Your SDK code -->
+            <script>
+            window.fbAsyncInit = function() {
+                FB.init({
+                xfbml            : true,
+                version          : 'v14.0'
+                });
+            };
+
+            (function(d, s, id) {
+                var js, fjs = d.getElementsByTagName(s)[0];
+                if (d.getElementById(id)) return;
+                js = d.createElement(s); js.id = id;
+                js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+                fjs.parentNode.insertBefore(js, fjs);
+            }(document, 'script', 'facebook-jssdk'));
+            </script>
+    <!-- End of Messenger Plugin  -->
     <footer class="row bg-carmine text-bubbles p-1 text-jsan">
         <div class="col-12 col-md-3 pt-2 pb-2 text-center">
             <img src="Images/sampleIMG.svg" class="img-fluid col-3 p-1" alt="logo">
