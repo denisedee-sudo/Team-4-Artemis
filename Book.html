@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css\main.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css\ourStyle.css">
+    <title>Women's Reproductive Health Org</title>
+</head>
+<body class="container-fluid bg-white text-play">
+    <!-- Start of Navbar -->
+    <nav class="navbar navbar-expand-lg bg-carmine fixed-top text-play">
+        <a class="navbar-brand p-3 text-maxy hover-big" href="#">
+            Navbar
+        </a>
+        <div class="collapse navbar-collapse" id="bar-toggle">
+            <ul class="navbar-nav text-center">
+                <li class="nav-item ">
+                    <a class="nav-link active text-bubbles hover-maxy hover-big" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active text-bubbles hover-maxy hover-big" href="About.html">About US</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active text-bubbles hover-maxy hover-big" href="Articles.html">Articles</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active text-bubbles hover-maxy hover-big" href="Book.html">Book an Appointment</a>
+                </li>
+                <li class="nav-item mx-auto d-block d-sm-none">
+                    <button class="btn btn-lg btn-jindigo text-bubbles hover-maxy hover-big m-2 p-2 pe-5 ps-5">
+                        <h5>Donate Now!</h5>
+                    </button>
+                </li>
+                <li class="nav-item mx-auto d-block d-sm-none">
+                    <div class="row align-items-center ms-4 me-4">
+                        <div class="col-6">
+                            <h5 class="text-bubbles text-center hover-maxy hover-big">Sign In</h5>
+                        </div>
+                        <div class="col-6">
+                            <i class="fa-solid fa-circle-user fa-3x m-1 me-2 ms-2 text-bubbles hover-maxy hover-big"></i>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="invisible-xs">
+            <button class="btn btn-lg btn-jindigo text-bubbles hover-maxy hover-big m-2 p-2 pe-5 ps-5">
+                <h5>Donate Now!</h5>
+            </button>
+        </div>
+        <div class="invisible-xs row align-items-center ms-4 me-4">
+            <div class="col-6">
+                <h5 class="text-bubbles text-center hover-maxy hover-big">Sign In</h5>
+            </div>
+            <div class="col-6">
+                <i class="fa-solid fa-circle-user fa-3x m-1 me-2 ms-2 text-bubbles hover-maxy hover-big"></i>
+            </div>
+        </div>
+        <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#bar-toggle">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+    </nav>
+    <!-- End of Navbar -->
+    <br><br><br>
+    <div class="row pt-5 pb-5">
+        <div class="col-1"></div>
+        <div class="bg-bubbles p-3 col-10 pt-5 text-jindigo text-center">
+            <h1 class="text-jindigo">
+                Welcome to Our Website
+            </h1>
+            <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptates tenetur consectetur ullam ducimus tempora quibusdam aspernatur eos at alias quisquam. Officia expedita reprehenderit impedit voluptas magnam voluptatum nesciunt esse commodi.
+            </p>
+        </div>
+        <div class="col-1"></div>
+    </div>
+    <!-- Start of Messenger Plugin  -->
+            <!-- Messenger Chat Plugin Code -->
+            <div id="fb-root"></div>
+
+            <!-- Your Chat Plugin code -->
+            <div id="fb-customer-chat" class="fb-customerchat">
+            </div>
+
+            <script>
+            var chatbox = document.getElementById('fb-customer-chat');
+            chatbox.setAttribute("page_id", "101599836032258");
+            chatbox.setAttribute("attribution", "biz_inbox");
+            </script>
+
+            <!-- Your SDK code -->
+            <script>
+            window.fbAsyncInit = function() {
+                FB.init({
+                xfbml            : true,
+                version          : 'v14.0'
+                });
+            };
+
+            (function(d, s, id) {
+                var js, fjs = d.getElementsByTagName(s)[0];
+                if (d.getElementById(id)) return;
+                js = d.createElement(s); js.id = id;
+                js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+                fjs.parentNode.insertBefore(js, fjs);
+            }(document, 'script', 'facebook-jssdk'));
+            </script>
+    <!-- End of Messenger Plugin  -->
+    <!-- Start of Footer -->
+    <footer class="row bg-carmine text-bubbles p-1 text-jsan">
+        <div class="col-12 col-md-3 pt-2 pb-2 text-center">
+            <img src="Images/sampleIMG.svg" class="img-fluid col-3 p-1" alt="logo">
+            <h5 class="hover-big hover-maxy" >Address: </h5>
+            <h5 class="hover-big hover-maxy" >Phone: </h5>
+            <h5 class="hover-big hover-maxy" >Email: </h5>
+            <a class="col-1 text-decoration-none" href="">
+                <i class="hover-gradient text-bubbles hover-big p-2 rounded-circle bg-jindigo fa-brands fa-facebook fa-2x"></i>
+            </a>
+            <a class="col-1 text-decoration-none" href="">
+                <i class="hover-gradient text-bubbles hover-big p-2 rounded-circle bg-jindigo fa-brands fa-instagram fa-2x"></i>
+            </a>
+            <a class="col-1 text-decoration-none" href="">
+                <i class="hover-gradient text-bubbles hover-big p-2 rounded-circle bg-jindigo fa-brands fa-twitter fa-2x"></i>
+            </a>
+        </div>
+        <div class="col-12 col-md-3 pt-2 pb-2 text-center">
+            <h4 class="hover-big pt-5  hover-maxy" >Stuff here</h4>
+            <h5 class="hover-big pt-1 hover-maxy" >Stuff here</h5>
+            <h5 class="hover-big pt-1 hover-maxy" >Stuff here</h5>
+            <h5 class="hover-big pt-1 hover-maxy" >Stuff here</h5>
+        </div>
+        <div class="col-12 col-md-3 pt-2 pb-2 text-center">
+            <h4 class="hover-big pt-5  hover-maxy" >Stuff here</h4>
+            <h5 class="hover-big pt-1 hover-maxy" >Stuff here</h5>
+            <h5 class="hover-big pt-1 hover-maxy" >Stuff here</h5>
+            <h5 class="hover-big pt-1 hover-maxy" >Stuff here</h5>
+        </div>
+        <div class="col-12 col-md-3 pt-2 pb-2 text-center">
+            <h4 class="hover-big pt-5  hover-maxy" >Donate Now!</h4>
+            <h5 class="hover-big pt-1 hover-maxy" >Stuff here</h5>
+            <h5 class="hover-big pt-1 hover-maxy" >Stuff here</h5>
+            <h5 class="hover-big pt-1 hover-maxy" >Stuff here</h5>
+        </div>
+        <div class="col-12 text-center">
+            © 2022 Copyright
+        </div>
+    </footer>
+    <!-- End of Footer -->
+</body>
+<script src="js\bootstrap.bundle.js"></script>
+</html>

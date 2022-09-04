@@ -2,3 +2,5 @@
 node_modules
 #Ignores components.html
 components.html
+# Ignore dummy-files folder
+dummy-files

@@ -74,3 +74,12 @@ Below code makes it so that an element changes bg color on hover.
 /* 
 Above code makes it so that an element changes bg color on hover.
 */
+/* Below code makes it so that an element is hidden when the screen is extra small. */
+@media only screen and (max-width: 575px) {
+  .invisible-xs {
+  display: none !important;
+  }
+}
+/* 
+Above code makes it so that an element is hidden when the screen is extra small.
+*/
