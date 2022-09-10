@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/denisedee-sudo/Team-4-Capstone#readme",
   "dependencies": {
-    "bootstrap": "^5.2.0"
+    "bootstrap": "^5.2.0",
+    "sass": "^1.54.9"
   }
 }
