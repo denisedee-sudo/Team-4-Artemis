@@ -11,7 +11,7 @@
 </head>
 <body class="container-fluid bg-white text-play">
     <!-- Start of Navbar -->
-    <nav class="navbar navbar-expand-lg bg-bubbles fixed-top text-play">
+    <nav class="navbar navbar-expand-lg  fixed-top text-play"  style="background-color: #B9E4FF;">
         <a class="navbar-brand p-3 text-jindigo hover-big" href="#">
             <img src="ARTEMISFinal.png" alt="logo">
         </a>
@@ -66,38 +66,45 @@
     <!-- End of Navbar -->
     <br><br><br><br>
     <div class="container text-jindigo">
-        <div class="bg-carmine col-12 pt-5 text-bubbles text-center">
+        <div class="bg-carmine col-12 pt-5 text-bubbles text-center container" >
             <h2 class="text-bubbles p-3">
                 User Info
             </h2>
             <!-- start of form -->
-            <div class="container">
-                <div class="row">
-                    <div class="form-group col-6">
+            
+                <div class="row d-flex justify-content-center">
+                    
+                    <div class="form-group col-5">
                         <input type="text" class="form-control" placeholder="First Name" id="firstName">
                     </div>
-                    <div class="form-group col-6">
+                    <div class="form-group col-5">
                         <input type="text" class="form-control" placeholder="Last Name" id="lastName">
                     </div>
+                   
                 </div>
+            
                 
             <br>
-            <div class="row">
-                <div class="form-group col-6">
+            <div class="row d-flex justify-content-center">
+                
+                <div class="form-group col-5">
                     <label for="">Mobile Number</label> 
                     <input type="number" class="form-control"> 
                     <p>You will receive a text message reminder before your appointment</p>
                 </div>
             
-            <div class="form-group col-6">
+            <div class="form-group col-5">
                 <label for="">Email Address</label>
                 <input type="text" class="form-control">
             </div>
+            
             </div>
-            <br><br>
+            <br>
             <h4>Additional Personal Information</h4>
-            <div class="row">
-                <div class="col-3">
+            <br>
+            <div class="row d-flex justify-content-center">
+                
+                <div class="col-2">
                     <label for="">Age</label>
                 <input type="number" class="form-control"> 
                 </div>
@@ -123,27 +130,21 @@
 
             </div>
             
-            
-            
-                
-            <br><br>
+            <br><hr><br>
             <h4>Background Information</h4>
             <div id="show-backgroundInfo">
                 
                 <br>
-                <label for="">Do you have Health Insurance?</label>
-                    <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
-                    <label class="form-check-label" for="inlineRadio1">Yes</label>
+
+                    <div class="row">
+                        <div class= "col-4"></div>
+                        <div class="col-4">
+                            <label for="">When was the first day of your last menstrual period? </label>
+                            <input type="date" class="form-control">
+                        </div>
+                        <div class= "col-4"></div>
                     </div>
-                    <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
-                    <label class="form-check-label" for="inlineRadio2">No</label>
-                    </div>
-            
-                    <br><br>
-            
-                    
+                    <br>
                         <label for="">Do you think you might be pregnant now?</label>
                         <div class="form-check form-check-inline">
                         <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
@@ -154,20 +155,19 @@
                         <label class="form-check-label" for="inlineRadio2">No</label>
                         </div>
                         <br><br>
-                        <div class="row">
-                            <div class= "col-4"></div>
-                            <div class="col-4">
-                                <label for="">When was the first day of your last menstrual period? </label>
-                                <input type="date" class="form-control">
-                            </div>
-                            <div class= "col-4"></div>
+
+                    <div class="text-center">
+                        <label for="">Do you smoke cigarettes?</label>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                            <label class="form-check-label" for="inlineRadio1">Yes</label>
                         </div>
-                        
-                    
-                    
-                    
-            <br>
-            
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                            <label class="form-check-label" for="inlineRadio2">No</label>
+                        </div>
+                     </div>
+                     <br>
                 <label for="">Have you ever taken birth control pills, or used a birth control patch, ring, or injection? </label>
                     <div class="form-check form-check-inline">
                     <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
@@ -178,9 +178,21 @@
                     <label class="form-check-label" for="inlineRadio2">No</label>
                     </div>
                     <br><br>
+
+                    <label for="">Have you ever been told by a medical professional not to take hormones? </label>
+                    <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                    <label class="form-check-label" for="inlineRadio1">Yes</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                    <label class="form-check-label" for="inlineRadio2">No</label>
+                    </div>
             
-                    <div class="row" >
-                        <div class="col-1"></div>
+            
+            <br><br>
+                    <div class="row d-flex justify-content-center" >
+                       
                         <div class="col-4">
                             <label for="">Did you ever experience a bad reaction to using hormonal birth control? <br>If yes, what kind of reaction occurred?</label>
                         <br>
@@ -215,42 +227,12 @@
             
                     
             
-                    <label for="">Have you ever been told by a medical professional not to take hormones? </label>
-                    <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
-                    <label class="form-check-label" for="inlineRadio1">Yes</label>
-                    </div>
-                    <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
-                    <label class="form-check-label" for="inlineRadio2">No</label>
-                    </div>
-            <br><br>
-            <div class="text-center">
-                <label for="">Do you smoke cigarettes?</label>
-                    <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
-                    <label class="form-check-label" for="inlineRadio1">Yes</label>
-                    </div>
-                    <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
-                    <label class="form-check-label" for="inlineRadio2">No</label>
-                    </div>
-            </div>     
+                         
         </div>
-        <br><br>
-            
+            <hr>
             <h4>Medical History</h4>
             <div id="show-medicalHistory">
-                <label for="">Have you had a recent change in vaginal bleeding that worries you?</label>
-                <div class="form-check form-check-inline">
-                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
-                <label class="form-check-label" for="inlineRadio1">Yes</label>
-                </div>
-                <div class="form-check form-check-inline">
-                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
-                <label class="form-check-label" for="inlineRadio2">No</label>
-                </div>
-            <br><br>
+                    <br>
                 <div class="row">
                     <div class="col-3"></div>
                     <div class = "col-6">
@@ -264,10 +246,23 @@
                             <label class="form-check-label" for="inlineRadio2">No</label>
                         </div>
                         <input type="text" class="form-control" id="yesGivenBirth" disabled>
-                    <br><br>
+                    <br>
                     </div>
                     <div class="col-3"></div>
                 </div>
+
+
+                <label for="">Have you had a recent change in vaginal bleeding that worries you?</label>
+                <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                <label class="form-check-label" for="inlineRadio1">Yes</label>
+                </div>
+                <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                <label class="form-check-label" for="inlineRadio2">No</label>
+                </div>
+            <br><br>
+                
                 
             
             
@@ -324,19 +319,19 @@
                 </div>
             </div>
         </div>
+        <br>
+            <button onclick="submit" class="btn btn-jindigo">Submit</button>
+            <br>
+            <br>    
         </div>
-            
-                <button onclick="submit" class="btn btn-jindigo">Submit</button>
-
+           
         <br><br>
-
-
     <!-- end of form -->
+</div>
+    <div class="container">
 
 
-
-        </div>
-        <div class="bg-bubbles col-12 pt-5 text-center p-3">
+        <div class=" col-12 pt-5 text-center p-3"  style="background-color: #B9E4FF;">
             <h2>Booking an Appointment</h2>
             <p class="p-3">
                 This where we're  going to put the calendar style booking widget. 
@@ -388,20 +383,20 @@
     <footer class="row bg-jindigo text-bubbles p-1 text-party">
         <div class="container-fluid bg-jindigo text-bubbles">
             <div class="row">
-                <div class="col-1"></div>
-                <div class="col-3">
+                <div class="col-12 col-lg-1"></div>
+                <div class="col-12 col-lg-3">
                     <br><br>
                     <h3 class="text-maxy">JOIN US</h3>
                     <p class="text-justify">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi dolorem, repudiandae vel, doloremque officia, quisquam culpa deserunt magnam natus nam nemo dignissimos quis! Sunt tenetur libero ut facere, quasi nisi?</p>
                     <button class="btn btn-lg btn-carmine text-jindigo hover-maxy hover-big"> BE A SPONSOR NOW</button>
                 </div>
-                <div class="col-3">
+                <div class="col-12 col-lg-3">
                     <br><br>
                     <h3 class="text-carmine">DONATE</h3>
                     <p class="text-justify">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi dolorem, repudiandae vel, doloremque officia, quisquam culpa deserunt magnam natus nam nemo dignissimos quis! Sunt tenetur libero ut facere, quasi nisi?</p>
                     <button class="btn btn-lg btn-maxy text-jindigo hover-carmine hover-big">DONATE NOW</button>
                 </div>
-                <div class="col-4">
+                <div class="col-12 col-lg-4">
                     <br><br>
                     <h3 class="text-bubbles">Connect with us</h3>
                     <a class="col-1 text-decoration-none" href="">
@@ -424,23 +419,27 @@
         <hr>
 
         <div class="col-12 col-md-3 pt-2 pb-2 text-center">
+            <!-- <img src="Images/sampleIMG.svg" class="img-fluid col-3 p-1" alt="logo"> -->
             <img src="ARTEMISlogoDark.png" alt="logo">
             <h5 class="hover-big hover-maxy" >Address: </h5>
             <h5 class="hover-big hover-maxy" >Phone: </h5>
             <h5 class="hover-big hover-maxy" >Email: </h5>
         </div>
         <div class="col-12 col-md-3 pt-2 pb-2 text-center">
+            <div class="invisible-xs"> <br><br><br></div>
             <h4 class="pt-5 text-play" >About Us</h4>
             <h5 class="hover-big pt-1 hover-maxy text-jsan" >Mission & Vision</h5>
             <h5 class="hover-big pt-1 hover-maxy text-jsan" >Our Team</h5>
             <h5 class="hover-big pt-1 hover-maxy text-jsan" >FAQ's</h5>
         </div>
         <div class="col-12 col-md-3 pt-2 pb-2 text-center">
+            <div class="invisible-xs"> <br><br><br></div>
             <h4 class="pt-5 text-play" >Stay Informed</h4>
             <h5 class="hover-big pt-1 hover-maxy text-jsan" >Articles</h5>
             <h5 class="hover-big pt-1 hover-maxy text-jsan" >Project Highlights</h5>
         </div>
         <div class="col-12 col-md-3 pt-2 pb-2 text-center">
+            <div class="invisible-xs"> <br><br><br></div>
             <h4 class="pt-5 text-play" >Get Involved</h4>
             <h5 class="hover-big pt-1 hover-maxy text-jsan" >Donate</h5>
             <h5 class="hover-big pt-1 hover-maxy text-jsan" >Become a Sponsor</h5>
@@ -454,4 +453,42 @@
     <!-- End of Footer -->
 </body>
 <script src="js\bootstrap.bundle.js"></script>
+<script>
+
+    function enableYesInputA(){
+      document.getElementById("Allergies-List").disabled = false;
+    }
+
+    function disableInputA(){
+    document.getElementById("Allergies-List").disabled = true;
+ 
+    }
+
+    function enableYesInputB(){
+      document.getElementById("yesHormonal").disabled = false;
+    }
+
+    function disableInputB(){
+    document.getElementById("yesHormonal").disabled = true;
+ 
+    }
+
+    function enableYesInputC(){
+      document.getElementById("yesMethodBC").disabled = false;
+    }
+
+    function disableInputC(){
+    document.getElementById("yesMethodBC").disabled = true;
+ 
+    }
+
+    function enableYesInputD(){
+      document.getElementById("yesGivenBirth").disabled = false;
+    }
+
+    function disableInputD(){
+    document.getElementById("yesGivenBirth").disabled = true;
+ 
+    }
+</script>
 </html>
