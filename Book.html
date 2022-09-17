@@ -89,7 +89,7 @@
                 
                 <div class="form-group col-12 col-lg-5">
                     <label for="">Mobile Number</label> 
-                    <input type="number" class="form-control"> 
+                    <input type="text" id="phone" name="phone" class="form-control" placeholder="(912)-345-6789" maxlength="14"  onInput="this.value = phoneFormat(this.value)"required>
                     <p>You will receive a text message reminder before your appointment</p>
                 </div>
             
@@ -105,8 +105,10 @@
             <div class="row d-flex justify-content-center">
                 
                 <div class="col-5 col-lg-2">
-                    <label for="">Age</label>
-                <input type="number" class="form-control"> 
+                <label for="">Age</label>
+                <!-- <input type="number" class="form-control">  -->
+                <input type="text" id="age" name="age" class="form-control" placeholder=" Only 13+ allowed" maxlength="2" required oninput="this.value = this.value.replace(/[^0-9]/g, '').replace(/(\..*)\./g, '');"/>
+                
                 </div>
                 
                 <div class="col-7 col-lg-3">
@@ -491,5 +493,14 @@
     document.getElementById("yesGivenBirth").disabled = true;
  
     }
+
+    function phoneFormat(input) {//returns (###) ###-####
+        input = input.replace(/\D/g,'');
+        var size = input.length;
+        if (size>0) {input="("+input}
+        if (size>3) {input=input.slice(0,4)+") "+input.slice(4,11)}
+        if (size>6) {input=input.slice(0,9)+"-" +input.slice(9)}
+    return input;
+}
 </script>
 </html>
