@@ -104,16 +104,17 @@
             <br>
             <div class="row d-flex justify-content-center">
                 
-                <div class="col-5 col-lg-2">
+                <!-- <div class="col-5 col-lg-2">
                 <label for="">Age</label>
-                <!-- <input type="number" class="form-control">  -->
+                <input type="number" class="form-control"> 
                 <input type="text" id="age" name="age" class="form-control" placeholder=" Only 13+ allowed" maxlength="2" required oninput="this.value = this.value.replace(/[^0-9]/g, '').replace(/(\..*)\./g, '');"/>
                 
-                </div>
+                </div> -->
                 
                 <div class="col-7 col-lg-3">
                     <label for="">Date of Birth</label>
-                    <input type="date" class="form-control"> 
+                    <input type="date" class="form-control" max="2009-12-31"> 
+
                 </div>
                 <div class="col-12 col-lg-5">
                     <label for="">Any allergies to Medications? If yes, list them here</label>
@@ -142,7 +143,7 @@
                         <div class= "col-12 col-lg-4"></div>
                         <div class="col-12 col-lg-4">
                             <label for="">When was the first day of your last menstrual period? </label>
-                            <input type="date" class="form-control">
+                            <input type="date" id= "datefield" class="form-control">
                         </div>
                         <div class= "col-12 col-lg-4"></div>
                     </div>
@@ -501,6 +502,27 @@
         if (size>3) {input=input.slice(0,4)+") "+input.slice(4,11)}
         if (size>6) {input=input.slice(0,9)+"-" +input.slice(9)}
     return input;
-}
+    }
+
+    // restrictions for 1st day of last menstrual period
+    var today = new Date();
+    var dd = today.getDate();
+    var mm = today.getMonth() + 1; //January is 0!
+    var yyyy = today.getFullYear();
+
+    if (dd < 10) {
+    dd = '0' + dd;
+    }
+
+    if (mm < 10) {
+    mm = '0' + mm;
+    } 
+        
+    today = yyyy + '-' + mm + '-' + dd;
+    document.getElementById("datefield").setAttribute("max", today);
+    
+   
+
+        
 </script>
 </html>
