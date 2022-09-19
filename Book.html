@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="css\main.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="css\ourStyle.css">
+    <link rel="stylesheet" href="calendar.css">
     <title>Artemis Organization</title>
 </head>
 <body class="container-fluid bg-white text-play">
@@ -354,10 +355,49 @@
 
         <div class=" col-12 pt-5 text-center p-3 bg-diamond">
             <h2>Booking an Appointment</h2>
-            <p class="p-3">
-                This where we're  going to put the calendar style booking widget. 
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus cumque, corrupti commodi natus laborum odio nam nihil animi illo inventore aliquid, placeat quo! Dignissimos eaque beatae numquam tempore, facilis assumenda.
-            </p>
+            <div class="container-fluid">
+                <div id="container">
+                    <div id="header">
+                      <h2 class="text-center p-5" id="monthDisplay"></h2>
+                      <div class="text-center pb-5">
+                        <button class="btn btn-dark" id="backButton">Back</button>
+                        <button class="btn btn-dark" id="nextButton">Next</button>
+                      </div>
+                    </div>
+              
+                    <div class="clRow text-center py-2 my-2 rounded bg-info" id="weekdays">
+                      <div>Sun</div>
+                      <div>Mon</div>
+                      <div>Tue</div>
+                      <div>Wed</div>
+                      <div>Thu</div>
+                      <div>Fri</div>
+                      <div>Sat</div>
+                    </div>
+              
+                    <div class="grid text-center" id="calendar"></div>
+                  </div>
+              
+                  <div class="text-center bg-dark text-info" id="newEventModal">
+                    <h2>New Event</h2>
+              
+                    <input id="eventTitleInput" placeholder="Event Title" />
+              
+                    <button class="btn btn-outline-info" id="saveButton">Save</button>
+                    <button class="btn btn-outline-info" id="cancelButton">Cancel</button>
+                  </div>
+              
+                  <div class="text-center bg-dark text-info" id="deleteEventModal">
+                    <h2>Event</h2>
+              
+                    <p id="eventText"></p>
+              
+                    <button class="btn btn-outline-info" id="deleteButton">Delete</button>
+                    <button class="btn btn-outline-info" id="closeButton">Close</button>
+                  </div>
+              
+                  <div id="modalBackDrop"></div>
+            </div>
         </div>
         <br>
         <div class="bg-carmine text-bubbles col-12 pt-5 text-center p-3">
@@ -474,6 +514,7 @@
     <!-- End of Footer -->
 </body>
 <script src="js\bootstrap.bundle.js"></script>
+<script src="./calendar.js"></script>
 <script>
 
     function enableYesInputA(){
