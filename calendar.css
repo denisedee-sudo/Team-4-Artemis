@@ -15,6 +15,11 @@
   height: 100px;
   transition: .34s;
 }
+@media only screen and (max-width: 768px){
+  .day{
+    height: 40px;
+  }
+ }
 .day:hover{
   background: linear-gradient(
     45deg,
@@ -40,7 +45,7 @@
   background-color: #e8f4fa;
   box-shadow: 0px 0px 3px black;
   border-radius: 5px;
-  bottom: 60vh;
+  bottom: 65vh;
   font-family: sans-serif;
   position: relative;
   margin: auto;
@@ -56,7 +61,7 @@
 
  @media only screen and (max-width: 768px){
   #newEventModal, #deleteEventModal {
-    bottom: 95vh;
+    bottom: 50vh;
   }
  }
 #eventTitleInput {
