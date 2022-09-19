@@ -65,6 +65,10 @@ function load() {
         daySquare.id = 'currentDay';
       }
 
+      if ((i - paddingDays) < day && nav === 0) {
+        daySquare.classList = 'pastDay';
+      }
+
       if (eventForDay) {
         const eventDiv = document.createElement('div');
         eventDiv.classList.add('event');

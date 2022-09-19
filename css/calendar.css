@@ -10,7 +10,29 @@
   grid-row-gap: 2px;
   background-color: rgb(255, 255, 255, 0);
 }
+.pastDay{
+  border: .5px solid #2D3E4B;
+  background-color: #2D3E4B;
+  height: 100px;
+  transition: .34s;
+}
+.pastDay:hover{
+    cursor: default;
+}
+@media only screen and (max-width: 768px){
+  .pastDay{
+    height: 40px;
+  }
+}
+#currentDay {
+  background-color:#F4F83B;
+}
+#currentDay:hover {
+  color: #F4F83B;
+  background-color:#F14444;
+}
 .day{
+  color: #2D3E4B;
   border: .5px solid #2D3E4B;
   height: 100px;
   transition: .34s;
