@@ -21,11 +21,12 @@
   }
  }
 .day:hover{
-  background: linear-gradient(
+  /* background: linear-gradient(
     45deg,
     rgba(244, 248, 59, 0.7),
     rgba(185, 228, 255, 0.7) 100%
-    ) !important;
+    ) !important; */
+    background: #F4F83B;
     transform: scale(1.05);
     cursor: pointer;
 }
