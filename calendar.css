@@ -32,7 +32,7 @@
     max-height: 55px;
     overflow: hidden;
   }
-/* #newEventModal, #deleteEventModal {
+#newEventModal, #deleteEventModal {
     display: none;
     z-index: 20;
     padding: 25px;
@@ -44,7 +44,7 @@
     left: calc(50% - 175px);
     position: absolute;
     font-family: sans-serif;
-  } */
+  }
   #eventTitleInput {
     padding: 10px;
     width: 100%;
@@ -61,12 +61,13 @@
   #eventText {
     font-size: 14px;
   }
-  /* #modalBackDrop {
+  #modalBackDrop {
     display: none;
+    top: 0px;
     left: 0px;
     z-index: 10;
     width: 100vw;
     height: 100%;
     position: absolute;
     background-color: rgba(0,0,0,0.8);
-  } */
+  }
