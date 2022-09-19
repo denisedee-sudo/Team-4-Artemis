@@ -1,0 +1,120 @@
+.clRow{
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+}
+.grid{
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+  grid-column-gap: 2px;
+  grid-row-gap: 2px;
+  background-color: rgb(255, 255, 255, 0);
+}
+.pastDay{
+  border: .5px solid #2D3E4B;
+  background-color: #2D3E4B;
+  height: 100px;
+  transition: .34s;
+}
+.pastDay:hover{
+    cursor: default;
+}
+@media only screen and (max-width: 768px){
+  .pastDay{
+    height: 40px;
+  }
+}
+#currentDay {
+  background-color:#F4F83B;
+}
+#currentDay:hover {
+  color: #F4F83B;
+  background-color:#F14444;
+}
+.day{
+  color: #2D3E4B;
+  border: .5px solid #2D3E4B;
+  height: 100px;
+  transition: .34s;
+}
+@media only screen and (max-width: 768px){
+  .day{
+    height: 40px;
+  }
+ }
+.day:hover{
+  /* background: linear-gradient(
+    45deg,
+    rgba(244, 248, 59, 0.7),
+    rgba(185, 228, 255, 0.7) 100%
+    ) !important; */
+    background: #F4F83B;
+    transform: scale(1.05);
+    cursor: pointer;
+}
+.padding {
+  cursor: default !important;
+  background-color: rgba(255, 252, 255, 0) !important;
+  border: none !important;
+}
+.event {
+  font-size: 10px;
+  padding: 5px;
+  background-color: #2D3E4B;
+  color: white;
+  border-radius: 5px;
+  max-height: 55px;
+  overflow: hidden;
+}
+#newEventModal, #deleteEventModal {
+  display: none;
+  z-index: 20;
+  padding: 25px;
+  background-color: #e8f4fa;
+  box-shadow: 0px 0px 3px black;
+  border-radius: 5px;
+  bottom: 65vh;
+  font-family: sans-serif;
+  position: relative;
+  margin: auto;
+  width: 80%;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+  animation-duration: 0.4s
+}
+@media only screen and (min-width: 1900px){
+  #newEventModal, #deleteEventModal {
+    bottom: 30vh;
+  }
+ }
+
+ @media only screen and (max-width: 768px){
+  #newEventModal, #deleteEventModal {
+    bottom: 50vh;
+  }
+ }
+#eventTitleInput {
+  padding: 10px;
+  width: 100%;
+  box-sizing: border-box;
+  margin-bottom: 25px;
+  border-radius: 3px;
+  outline: none;
+  border: none;
+  box-shadow: 0px 0px 3px gray;
+}
+#eventTitleInput.error {
+  border: 2px solid red;
+}
+#eventText {
+  font-size: 14px;
+}
+#modalBackDrop {
+  display: none;
+  top: 0px;
+  left: 0px;
+  z-index: 10;
+  width: 100vw;
+  height: 100%;
+  position: fixed;
+  background-color: rgba(0,0,0,0.8);
+}

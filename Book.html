@@ -7,14 +7,15 @@
     <link rel="stylesheet" href="css\main.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="css\ourStyle.css">
+    <link rel="stylesheet" href="css\calendar.css">
     <link rel="icon" type="image/x-icon" href="Images\ARTEMISlogoDark.ico">
     <title>Artemis Organization</title>
 </head>
 <body class="container-fluid bg-white text-play">
     <!-- Start of Navbar -->
-    <nav class="navbar navbar-expand-lg  fixed-top text-play"  style="background-color: #B9E4FF;">
+    <nav class="navbar navbar-expand-lg  fixed-top text-play bg-diamond">
         <a class="navbar-brand p-3 text-jindigo hover-big" href="#">
-            <img src="ARTEMISFinal.png" alt="logo">
+            <img src="ARTEMISFinal.png" alt="logo" height="60px">
         </a>
         <div class="collapse navbar-collapse" id="bar-toggle">
             <ul class="navbar-nav text-center">
@@ -65,88 +66,125 @@
         </button>
     </nav>
     <!-- End of Navbar -->
-    <br><br><br><br>
-    <div class="container text-jindigo">
-        <div class="bg-carmine col-12 pt-5 text-bubbles text-center container" >
+    <br><br><br><br><br>
+    <div class="container text-bubbles ">
+        <div class="bg-jindigo col-12 pt-5 text-bubbles text-center container overflow-auto" style="max-width: 4000px; max-height: 500px;">
             <h2 class="text-bubbles p-3">
                 User Info
             </h2>
             <!-- start of form -->
-            
+            <form action="" class="was-validated">
                 <div class="row d-flex justify-content-center">
                     
-                    <div class="form-group  col-12 col-lg-5">
-                        <input type="text" class="form-control" placeholder="First Name" id="firstName">
+                    <div class="form-group  col-12 col-lg-5 mb-2">
+                        <input type="text" class="form-control" placeholder="First Name"  id="validationTooltip01" required>
+                        <div class="valid-feedback">Valid.</div>
+                        <div class="invalid-feedback text-maxy">Please fill out this field.</div>
                     </div>
                     <div class="form-group col-12 col-lg-5">
-                        <input type="text" class="form-control" placeholder="Last Name" id="lastName">
+                        <input type="text" class="form-control" placeholder="Last Name" id="validationTooltip02" required>
+                        <div class="valid-feedback">Valid.</div>
+                        <div class="invalid-feedback text-maxy">Please fill out this field.</div>
                     </div>
                    
                 </div>
-            
+            </form>
                 
             <br>
+
+        <form action="" class="was-validated">
             <div class="row d-flex justify-content-center">
-                
+               
                 <div class="form-group col-12 col-lg-5">
-                    <label for="">Mobile Number</label> 
-                    <input type="number" class="form-control"> 
-                    <p>You will receive a text message reminder before your appointment</p>
+                    <label for="" class="py-2 mb-1">Mobile Number</label> 
+                    <input type="text" id="phone" name="phone" class="form-control" placeholder="(912)-345-6789" maxlength="14"  onInput="this.value = phoneFormat(this.value)"required>
+                    <!-- <p>You will receive a text message reminder before your appointment</p> -->
+                    <div class="valid-feedback">Valid.</div>
+                    <div class="invalid-feedback text-maxy">Please fill out this field.</div>
                 </div>
             
             <div class="form-group col-12 col-lg-5">
-                <label for="">Email Address</label>
-                <input type="text" class="form-control">
+                <label for="" class="py-2 mb-1">Email Address</label>
+                <div class="input-group has-validation">
+                    <input type="text" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required>
+                    <span class="input-group-text" id="inputGroupPrepend">@gmail.com</span>
+                    <div class="valid-feedback">Valid.</div>
+                    <div class="invalid-feedback text-maxy">Please fill out this field.</div>
+                  </div>
+               
             </div>
+        </form>
             
             </div>
+
+            
             <br>
             <h4>Additional Personal Information</h4>
             <br>
-            <div class="row d-flex justify-content-center">
+            
                 
-                <div class="col-5 col-lg-2">
-                    <label for="">Age</label>
+                <!-- <div class="col-5 col-lg-2">
+                <label for="" class="py-2 mb-1">Age</label>
                 <input type="number" class="form-control"> 
-                </div>
+                <input type="text" id="age" name="age" class="form-control" placeholder=" Only 13+ allowed" maxlength="2" required oninput="this.value = this.value.replace(/[^0-9]/g, '').replace(/(\..*)\./g, '');"/>
                 
-                <div class="col-7 col-lg-3">
-                    <label for="">Date of Birth</label>
-                    <input type="date" class="form-control"> 
-                </div>
-                <div class="col-12 col-lg-5">
-                    <label for="">Any allergies to Medications? If yes, list them here</label>
-                    
-                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="yes-Allergies" value="option1" onclick="enableYesInputA(this.checked)">
-                    <label class="form-check-label" for="inlineRadio1">Yes</label>
-                    
-                    
-                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="no-Allergies" value="option2" onclick="disableInputA(this.checked)">
-                    <label class="form-check-label" for="inlineRadio2">No</label>
-                    
-
+                </div> -->
+            <form action="" class="was-validated d-flex justify-content-center row">
+                <div class="form-group col-12 col-lg-5 ">
+                    <label for="" class="py-1 mb-1"><p></p> Any allergies to Medications? </label>
+                    <p>If yes, list them here:</p>
+                   
+                        <input type="radio" class="form-check-input" id="validationFormCheck2" name="radio-stacked" onclick="enableYesInputA(this.checked)" required>
+                        <label class="form-check-label pb-3" for="validationFormCheck2">Yes</label>
+                      
+                        <input type="radio" class="form-check-input" id="validationFormCheck3" name="radio-stacked"  onclick="disableInputA(this.checked)" required>
+                        <label class="form-check-label pb-3" for="validationFormCheck3">No</label>
+                        
+        
                     <input type="text" class="form-control" disabled id="Allergies-List"> 
+                    <div class="invalid-feedback text-maxy">Please select answer.</div>
                     
                 </div>
+                <div class="form-group col-12 col-lg-5 mb-2">
+                    <div class="py-3 invisible-xs"></div>
+                    <label class="pt-5 mb-4" for="">Date of Birth</label>
+                    <div class="p-1 input-group has-validation">
+                    <input type="date" class="form-control" max="2009-12-31" id="validationTooltip01"required> 
+                    </div>
+                 
+                    <div class="valid-feedback">Valid.</div>
+                    <div class="invalid-feedback text-maxy">Please fill out this field.</div>
+                
+                </div>
+            
 
-            </div>
+                
+            </form>
+
             
             <br><hr><br>
             <h4>Background Information</h4>
             <div id="show-backgroundInfo">
                 
                 <br>
-
-                    <div class="row">
-                        <div class= "col-12 col-lg-4"></div>
+            <form action="" class="was-validated d-flex justify-content-center row">
+                    <!-- <div class="row"> -->
+                        <!-- <div class= "col-12 col-lg-4"></div> -->
                         <div class="col-12 col-lg-4">
-                            <label for="">When was the first day of your last menstrual period? </label>
-                            <input type="date" class="form-control">
+                            <label for="" class="py-2 mb-1">When was the first day of your last menstrual period? </label>
+                            <div class="input-group has-validation">
+                                <input type="date" class="form-control" max="2009-12-31" id= "datefield" required> 
+                                </div>
+            
+                                <div class="valid-feedback">Valid.</div>
+                                <div class="invalid-feedback text-maxy">Please fill out this field.</div>
                         </div>
-                        <div class= "col-12 col-lg-4"></div>
+                        <!-- <div class= "col-12 col-lg-4"></div> -->
                     </div>
                     <br>
-                        <label for="">Do you think you might be pregnant now?</label>
+                    
+                        <label for="" class="py-2 mb-1">Do you think you might be pregnant now?</label>
+                        <br>
                         <div class="form-check form-check-inline">
                         <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
                         <label class="form-check-label" for="inlineRadio1">Yes</label>
@@ -157,8 +195,10 @@
                         </div>
                         <br><br>
 
+                      
                     <div class="text-center">
-                        <label for="">Do you smoke cigarettes?</label>
+                        <label for="" class="py-2 mb-1">Do you smoke cigarettes?</label>
+                        <br>
                         <div class="form-check form-check-inline">
                             <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
                             <label class="form-check-label" for="inlineRadio1">Yes</label>
@@ -169,7 +209,9 @@
                         </div>
                      </div>
                      <br>
-                <label for="">Have you ever taken birth control pills, or used a birth control patch, ring, or injection? </label>
+                     
+                <label for="" class="py-2 mb-1">Have you ever taken birth control pills, or used a birth control patch, ring, or injection? </label>
+                <br>
                     <div class="form-check form-check-inline">
                     <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
                     <label class="form-check-label" for="inlineRadio1">Yes</label>
@@ -180,7 +222,8 @@
                     </div>
                     <br><br>
 
-                    <label for="">Have you ever been told by a medical professional not to take hormones? </label>
+                    <label for="" class="py-2 mb-1">Have you ever been told by a medical professional not to take hormones?</label>
+                    <br>
                     <div class="form-check form-check-inline">
                     <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
                     <label class="form-check-label" for="inlineRadio1">Yes</label>
@@ -189,71 +232,78 @@
                     <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
                     <label class="form-check-label" for="inlineRadio2">No</label>
                     </div>
-            
+                </form>
             
             <br><br>
-                    <div class="row d-flex justify-content-center" >
-                       
-                        <div class="col-12 col-lg-4">
-                            <label for="">Did you ever experience a bad reaction to using hormonal birth control? <br>If yes, what kind of reaction occurred?</label>
-                        <br>
-                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1" onclick="enableYesInputB(this.checked)">
-                            <label class="form-check-label" for="inlineRadio1">Yes</label>
-                    
-                            
-                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2" onclick="disableInputB(this.checked)">
-                            <label class="form-check-label" for="inlineRadio2">No</label>
-
-                            <input type="text" class="form-control" id="yesHormonal" disabled>
-                            <br><br>
-                        </div>     
+            
                 
-                    
-                    
-                        <div class="col-12 col-lg-6">
-                            <label for="">Are you currently using any method of birth control including pills, or a birth control patch, ring or shot/injection? <br> If yes, which one do you use? </label>
+                
+                <form action="" class="was-validated row d-flex justify-content-center">
+                    <div class="form-group col-12 col-lg-7 has-validation">
+                    <label for="" class="py-2 mb-1">Did you ever experience a bad reaction to using hormonal birth control?</label>
+                    <p>If yes, what kind of reaction occurred?</p>
                         
-                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1" onclick="enableYesInputC(this.checked)">
-                                <label class="form-check-label" for="inlineRadio1">Yes</label>
+                        <input type="radio" class="form-check-input" id="validationFormCheck2" name="radio-stacked" onclick="enableYesInputB(this.checked)" required>
+                        <label class="form-check-label ms-1 me-2" for="validationFormCheck2">Yes</label>
                         
-                            
-                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2" onclick="disableInputC(this.checked)">
-                                <label class="form-check-label" for="inlineRadio2">No</label>
+                        <input type="radio" class="form-check-input me-1 ms-2" id="validationFormCheck3" name="radio-stacked"  onclick="disableInputB(this.checked)" required>
+                        <label class="form-check-label me-1 " for="validationFormCheck3">No</label>
+                        
+        
+                    <input type="text" class="my-3 form-control" disabled id="yesHormonal"> 
+                    <div class="invalid-feedback text-maxy">Please select answer.</div>
+                    
+                    </div>
+                </form>
+                <br>
+                <form action="" class="was-validated row d-flex justify-content-center">
+                        <div class="col-12 col-lg-7 form-group ">
+                            <label for="" class="py-2 mb-1">Are you currently using any method of birth control including pills, or a birth control patch, ring or shot/injection? If yes, which one do you use? </label>
+                        
 
-                                <input type="text" class="form-control" id="yesMethodBC" disabled>
+                                <input type="radio" class="form-check-input" id="validationFormCheck4" name="radio-stacked" onclick="enableYesInputC(this.checked)" required>
+                                <label class="form-check-label mx-2" for="validationFormCheck4">Yes</label>
+                      
+                                <input type="radio" class="ms-1 form-check-input" id="validationFormCheck4" name="radio-stacked"  onclick="disableInputC(this.checked)" required>
+                                <label class="form-check-label " for="validationFormCheck4">No</label>
+
+                                <input type="text" class="my-3 form-control" id="yesMethodBC" disabled>
+                                <div class="invalid-feedback text-maxy">Please select answer.</div>
                                 <br><br>
                         </div>
-                    </div>
+                    </form>
+                
                     
-            
+               
                     
             
                          
-        </div>
+       
             <hr>
             <h4>Medical History</h4>
             <div id="show-medicalHistory">
                     <br>
-                <div class="row">
-                    <div class="col-3"></div>
+            <form action="" class="was-validated row d-flex justify-content-center">
                     <div class = "col-12 col-lg-6">
-                        <label for="">Have you given birth within the past 21 days? If yes, how long ago? </label>
-                        <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1" onclick="enableYesInputD(this.checked)">
-                            <label class="form-check-label" for="inlineRadio1">Yes</label>
-                        </div>
-                        <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2" onclick="disableInputD(this.checked)">
-                            <label class="form-check-label" for="inlineRadio2">No</label>
-                        </div>
-                        <input type="text" class="form-control" id="yesGivenBirth" disabled>
+                        <label for="" class="py-2 mb-1">Have you given birth within the past 21 days?</label>
+                        <p>If yes, how long ago?</p> 
+        
+
+                        <input type="radio" class="form-check-input" id="validationFormCheck4" name="radio-stacked" onclick="enableYesInputD(this.checked)" required>
+                        <label class="form-check-label mx-2" for="validationFormCheck4">Yes</label>
+                      
+                        <input type="radio" class="mx-1 ms-2 form-check-input" id="validationFormCheck4" name="radio-stacked"  onclick="disableInputD(this.checked)" required>
+                        <label class="form-check-label " for="validationFormCheck4">No</label>
+
+                        <input type="text" class="my-3 form-control" id="yesGivenBirth" disabled>
+                        <div class="invalid-feedback text-maxy">Please select answer.</div>
                     <br>
                     </div>
-                    <div class="col-3"></div>
-                </div>
+                 
+            </form>
 
-
-                <label for="">Have you had a recent change in vaginal bleeding that worries you?</label>
+                <label for="" class="py-2 mb-1">Have you had a recent change in vaginal bleeding that worries you?</label>
+                <br>
                 <div class="form-check form-check-inline">
                 <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
                 <label class="form-check-label" for="inlineRadio1">Yes</label>
@@ -270,7 +320,8 @@
                     
             
             <div class="text-center"> 
-                <label for="">Are you currently breastfeeding?</label>
+                <label for="" class="py-2 mb-1">Are you currently breastfeeding?</label>
+                <br>
                 <div class="form-check form-check-inline">
                 <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
                 <label class="form-check-label" for="inlineRadio1">Yes</label>
@@ -283,7 +334,7 @@
                 
             <br>
             <div class="text-center">  
-                <label for="">Do you have diabetes?</label>
+                <label for="" class="py-2 mb-1">Do you have diabetes?</label>
                 <br>
                 <div class="form-check form-check-inline">
                 <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
@@ -297,7 +348,8 @@
             
             <br>
             <div class="text-center"> 
-                <label for="">Are you being treated for inflammatory bowel disease? </label>
+                <label for="" class="py-2 mb-1">Are you being treated for inflammatory bowel disease? </label>
+                <br>
                 <div class="form-check form-check-inline">
                 <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
                 <label class="form-check-label" for="inlineRadio1">Yes</label>
@@ -310,7 +362,8 @@
             
             <br>
             <div class="text-center"> 
-                <label for="">Have you had recent major surgery or are you planning to have surgery in the next 4 weeks?</label>
+                <label for="" class="py-2 mb-1">Have you had recent major surgery or are you planning to have surgery in the next 4 weeks?</label>
+                <br>
                 <div class="form-check form-check-inline">
                 <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
                 <label class="form-check-label" for="inlineRadio1">Yes</label>
@@ -322,23 +375,64 @@
             </div>
         </div>
         <br>
-            <button onclick="submit" class="btn btn-jindigo">Submit</button>
+        <div class="d-grid">
+            <button onclick="submit" class="btn btn-carmine mx-2">Submit</button>
+        </div>
             <br>
             <br>    
         </div>
-           
+    </div>
         <br><br>
     <!-- end of form -->
-</div>
+
     <div class="container">
 
 
-        <div class=" col-12 pt-5 text-center p-3"  style="background-color: #B9E4FF;">
-            <h2>Booking an Appointment</h2>
-            <p class="p-3">
-                This where we're  going to put the calendar style booking widget. 
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus cumque, corrupti commodi natus laborum odio nam nihil animi illo inventore aliquid, placeat quo! Dignissimos eaque beatae numquam tempore, facilis assumenda.
-            </p>
+        <div class=" col-12 pt-5 text-center p-2 bg-diamond">
+            <h2>Book an Appointment</h2>
+            <div class="container-fluid">
+                <div id="container">
+                    <div id="header">
+                      <h3 class="text-center py-2" id="monthDisplay"></h3>
+                      <div class="text-center pb-5">
+                        <button class="btn btn-jindigo" id="backButton">Back</button>
+                        <button class="btn btn-jindigo" id="nextButton">Next</button>
+                      </div>
+                    </div>
+              
+                    <div class="clRow text-jindigo text-center py-2 my-2 bg-maxy" id="weekdays">
+                      <div><h6>Su</h6></div>
+                      <div><h6>Mo</h6></div>
+                      <div><h6>Tu</h6></div>
+                      <div><h6>We</h6></div>
+                      <div><h6>Th</h6></div>
+                      <div><h6>Fr</h6></div>
+                      <div><h6>Sa</h6></div>
+                    </div>
+              
+                    <div class="grid text-center" id="calendar"></div>
+                  </div>
+              
+                  <div class="text-jsan text-center bg-jindigo text-maxy" id="newEventModal">
+                    <h2>New Event</h2>
+              
+                    <input id="eventTitleInput" placeholder="Event Title" />
+              
+                    <button class="btn btn-outline-maxy" id="saveButton">Save</button>
+                    <button class="btn btn-outline-maxy" id="cancelButton">Cancel</button>
+                  </div>
+              
+                  <div class="text-jsan text-center bg-jindigo text-maxy" id="deleteEventModal">
+                    <h2>Event</h2>
+              
+                    <p id="eventText"></p>
+              
+                    <button class="btn btn-outline-maxy" id="deleteButton">Delete</button>
+                    <button class="btn btn-outline-maxy" id="closeButton">Close</button>
+                  </div>
+              
+                  <div id="modalBackDrop"></div>
+            </div>
         </div>
         <br>
         <div class="bg-carmine text-bubbles col-12 pt-5 text-center p-3">
@@ -422,6 +516,7 @@
 
         <div class="col-12 col-md-3 pt-2 pb-2 text-center">
             <!-- <img src="Images/sampleIMG.svg" class="img-fluid col-3 p-1" alt="logo"> -->
+
             <img src="ARTEMISlogoDark.png" alt="logo">
             <h5 class="hover-big hover-maxy" >Address:  27 Ofelia St., Ofelia Village, Bgy, Project 8, Quezon City, 1106 Metro Manila</h5>
             <h5 class="hover-big hover-maxy" >Phone: (02) 3454 3854</h5>
@@ -455,6 +550,7 @@
     <!-- End of Footer -->
 </body>
 <script src="js\bootstrap.bundle.js"></script>
+<script src="js\calendar.js"></script>
 <script>
 
     function enableYesInputA(){
@@ -492,5 +588,34 @@
     document.getElementById("yesGivenBirth").disabled = true;
  
     }
+
+    function phoneFormat(input) {//returns (###) ###-####
+        input = input.replace(/\D/g,'');
+        var size = input.length;
+        if (size>0) {input="("+input}
+        if (size>3) {input=input.slice(0,4)+") "+input.slice(4,11)}
+        if (size>6) {input=input.slice(0,9)+"-" +input.slice(9)}
+    return input;
+    }
+
+    // restrictions for 1st day of last menstrual period
+    var today = new Date();
+    var dd = today.getDate();
+    var mm = today.getMonth() + 1; //January is 0!
+    var yyyy = today.getFullYear();
+
+    if (dd < 10) {
+    dd = '0' + dd;
+    }
+
+    if (mm < 10) {
+    mm = '0' + mm;
+    } 
+        
+    today = yyyy + '-' + mm + '-' + dd;
+    document.getElementById("datefield").setAttribute("max", today);
+    
+   
+        
 </script>
 </html>
