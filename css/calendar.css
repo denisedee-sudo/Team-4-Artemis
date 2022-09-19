@@ -11,7 +11,7 @@
   background-color: rgb(255, 255, 255, 0);
 }
 .day{
-  border: .5px solid rgba(0, 0, 0, 35);
+  border: .5px solid #2D3E4B;
   height: 100px;
   transition: .34s;
 }
@@ -29,6 +29,11 @@
     background: #F4F83B;
     transform: scale(1.05);
     cursor: pointer;
+}
+.padding {
+  cursor: default !important;
+  background-color: rgba(255, 252, 255, 0) !important;
+  border: none !important;
 }
 .event {
   font-size: 10px;
