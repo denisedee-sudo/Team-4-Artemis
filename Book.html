@@ -65,7 +65,7 @@
         </button>
     </nav>
     <!-- End of Navbar -->
-    <br><br><br><br>
+    <br><br><br><br><br>
     <div class="container text-bubbles ">
         <div class="bg-jindigo col-12 pt-5 text-bubbles text-center container overflow-auto" style="max-width: 4000px; max-height: 500px;">
             <h2 class="text-bubbles p-3">
@@ -130,7 +130,8 @@
                 </div> -->
             <form action="" class="was-validated d-flex justify-content-center row">
                 <div class="form-group col-12 col-lg-5 mb-2">
-                    <label for="">Date of Birth</label>
+                    <div class="py-3"></div>
+                    <label class="pt-5 pb-2" for="">Date of Birth</label>
                     <div class="input-group has-validation">
                     <input type="date" class="form-control" max="2009-12-31" id="validationTooltip01"required> 
                     </div>
@@ -142,7 +143,8 @@
             
 
                 <div class="form-group col-12 col-lg-5 ">
-                    <label for="">Any allergies to Medications? If yes, list them here</label>
+                    <label for=""><p></p> Any allergies to Medications? </label>
+                    <p>If yes, list them here:</p>
                    
                         <input type="radio" class="form-check-input" id="validationFormCheck2" name="radio-stacked" onclick="enableYesInputA(this.checked)" required>
                         <label class="form-check-label " for="validationFormCheck2">Yes</label>
@@ -151,7 +153,7 @@
                         <label class="form-check-label " for="validationFormCheck3">No</label>
                         
         
-                    <input type="text" class="form-control" disabled id="Allergies-List"> 
+                    <input type="text" class="m-2 form-control" disabled id="Allergies-List"> 
                     <div class="invalid-feedback text-maxy">Please select answer.</div>
                     
                 </div>
@@ -245,7 +247,7 @@
                         <label class="form-check-label " for="validationFormCheck3">No</label>
                         
         
-                    <input type="text" class="form-control" disabled id="yesHormonal"> 
+                    <input type="text" class="my-3 form-control" disabled id="yesHormonal"> 
                     <div class="invalid-feedback text-maxy">Please select answer.</div>
                     
                     </div>
@@ -262,7 +264,7 @@
                                 <input type="radio" class="form-check-input" id="validationFormCheck4" name="radio-stacked"  onclick="disableInputC(this.checked)" required>
                                 <label class="form-check-label " for="validationFormCheck4">No</label>
 
-                                <input type="text" class="form-control" id="yesMethodBC" disabled>
+                                <input type="text" class="my-3 form-control" id="yesMethodBC" disabled>
                                 <div class="invalid-feedback text-maxy">Please select answer.</div>
                                 <br><br>
                         </div>
@@ -280,7 +282,8 @@
                     <br>
             <form action="" class="was-validated row d-flex justify-content-center">
                     <div class = "col-12 col-lg-6">
-                        <label for="">Have you given birth within the past 21 days? If yes, how long ago? </label>
+                        <label for="">Have you given birth within the past 21 days?</label>
+                        <p>If yes, how long ago?</p> 
         
 
                         <input type="radio" class="form-check-input" id="validationFormCheck4" name="radio-stacked" onclick="enableYesInputD(this.checked)" required>
@@ -289,7 +292,7 @@
                         <input type="radio" class="form-check-input" id="validationFormCheck4" name="radio-stacked"  onclick="disableInputD(this.checked)" required>
                         <label class="form-check-label " for="validationFormCheck4">No</label>
 
-                        <input type="text" class="form-control" id="yesGivenBirth" disabled>
+                        <input type="text" class="my-3 form-control" id="yesGivenBirth" disabled>
                         <div class="invalid-feedback text-maxy">Please select answer.</div>
                     <br>
                     </div>
