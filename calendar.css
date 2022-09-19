@@ -32,14 +32,13 @@
   overflow: hidden;
 }
 #newEventModal, #deleteEventModal {
-
   display: none;
   z-index: 20;
   padding: 25px;
   background-color: #e8f4fa;
   box-shadow: 0px 0px 3px black;
   border-radius: 5px;
-  bottom: 50vw;
+  bottom: 50vh;
   font-family: sans-serif;
   position: relative;
   margin: auto;
@@ -47,7 +46,17 @@
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
   animation-duration: 0.4s
 }
+@media only screen and (min-width: 1900px){
+  #newEventModal, #deleteEventModal {
+    bottom: 30vh;
+  }
+ }
 
+ @media only screen and (max-width: 768px){
+  #newEventModal, #deleteEventModal {
+    bottom: 95vh;
+  }
+ }
 #eventTitleInput {
   padding: 10px;
   width: 100%;
