@@ -1,3 +1,6 @@
+.pointer{
+  cursor: pointer;
+}
 /* Custom Fonts Start*/
       /*  CSS rules to specify families:
       font-family: 'Josefin Sans', sans-serif;
@@ -61,15 +64,56 @@
 Below code makes it so that an element changes bg color on hover.
 */
 .hover-gradient {
+  transition: .34s;
+}
+
+.hover-gradient:hover {
+  background: linear-gradient(
+    45deg,
+    rgba(241, 68, 68, 0.7),
+    rgba(244, 248, 59, 0.7) 100%
+    ) !important;
+}
+.hover-bg-peachpuff {
+  transition: .34s;
+}
+
+.hover-bg-peachpuff:hover {
+  background: #FFD4B9 !important;
+}
+.hover-bg-diamond {
+  transition: .34s;
+}
+
+.hover-bg-diamond:hover {
+  background: #B9E4FF !important;
+}
+.hover-bg-carmine{
+  transition: .34s;
+}
+.hover-bg-carmine:hover {
+  background: #F14444 !important;
+}
+
+.hover-bg-bubbles {
+  transition: .34s;
+}
+
+.hover-bg-bubbles:hover {
+  background: #E8F6FF !important;
+}
+.hover-bg-maxy {
     transition: .34s;
   }
   
-.hover-gradient:hover {
-    background: linear-gradient(
-      45deg,
-      rgba(241, 68, 68, 0.7),
-      rgba(244, 248, 59, 0.7) 100%
-      ) !important;
+.hover-bg-maxy:hover {
+    background: #F4F83B !important;
+  }
+  .hover-bg-jindigo {
+    transition: .34s;
+  }  
+.hover-bg-jindigo:hover {
+    background: #2D3E4B !important;
   }
 /* 
 Above code makes it so that an element changes bg color on hover.
@@ -83,3 +127,8 @@ Above code makes it so that an element changes bg color on hover.
 /* 
 Above code makes it so that an element is hidden when the screen is extra small.
 */
+@media only screen and (min-width: 992px) {
+  .invisible-lg-up {
+  display: none !important;
+  }
+}
