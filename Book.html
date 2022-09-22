@@ -112,8 +112,8 @@
             <div class="form-group col-12 col-lg-5">
                 <label for="" class="py-2 mb-1">Email Address</label>
                 <div class="input-group has-validation">
-                    <input type="text" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required>
-                    <span class="input-group-text" id="inputGroupPrepend">@gmail.com</span>
+                    <input type="text" class="form-control" id="ValidateEmail" 
+                    placeholder="name@email.com" aria-describedby="inputGroupPrepend" required>
                     <div class="valid-feedback">Valid.</div>
                     <div class="invalid-feedback text-maxy">Please fill out this field.</div>
                   </div>
@@ -192,12 +192,12 @@
                         <label for="" class="py-2 mb-1">Do you think you might be pregnant now?</label>
                         <br>
                         <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
-                        <label class="form-check-label" for="inlineRadio1">Yes</label>
+                        <input class="form-check-input" type="radio" name="1a" id="inlineRadio1a" value="option1">
+                        <label class="form-check-label" for="inlineRadio1a">Yes</label>
                         </div>
                         <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
-                        <label class="form-check-label" for="inlineRadio2">No</label>
+                        <input class="form-check-input" type="radio" name="1a" id="inlineRadio2a" value="option2">
+                        <label class="form-check-label" for="inlineRadio2a">No</label>
                         </div>
                         <br><br>
 
@@ -776,6 +776,16 @@
         if (size>3) {input=input.slice(0,4)+") "+input.slice(4,11)}
         if (size>6) {input=input.slice(0,9)+"-" +input.slice(9)}
     return input;
+    }
+    function ValidateEmail(inputText){
+            const email = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+            let form;
+            if(inputText.value.match(email))
+            {
+                return document.getElementById("ValidateEmail").validity.valid
+            }else{
+                return document.getElementById("ValidateEmail").validity.patternMismatch
+            }
     }
 
     // restrictions for 1st day of last menstrual period
