@@ -111,8 +111,9 @@
             
             <div class="form-group col-12 col-lg-5">
                 <label for="" class="py-2 mb-1">Email Address</label>
-                <div class="input-group has-validation">
-                    <input type="text" class="form-control" id="ValidateEmail" 
+                <div class="input-group">
+                    <input type="text" class="form-control invalid" id="ValidateEmail" 
+                    onkeyup="ValidateEmail(this.value)"
                     placeholder="name@email.com" aria-describedby="inputGroupPrepend" required>
                     <div class="valid-feedback">Valid.</div>
                     <div class="invalid-feedback text-maxy">Please fill out this field.</div>
@@ -779,14 +780,14 @@
     return input;
     }
     function ValidateEmail(inputText){
-            const email = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
-            let form;
-            if(inputText.value.match(email))
-            {
-                document.getElementById("ValidateEmail").validity.valid = true
-            }else{
-                document.getElementById("ValidateEmail").validity.patternMismatch = false
-            }
+        const email = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+        let form = document.getElementById("ValidateEmail");
+        let message  =  document.getElementById("form-email");
+        if(email.test(inputText) === true)
+        {
+            message.classList.remove("text-maxy");
+            message.classList.add("text-jindigo");
+        } 
     }
 
     // restrictions for 1st day of last menstrual period
