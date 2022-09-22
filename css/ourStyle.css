@@ -17,9 +17,12 @@ h3{
   grid-column-gap: 25px;
   grid-row-gap: 2px;
 }
-@media only screen and (max-width: 375px) {
-  .fb-post{
-    overflow-x: hidden;
+.fb-div{
+  overflow-x: none;
+}
+@media only screen and (max-width: 365px) {
+  .fb-div{
+    overflow-x: scroll !important;
   }
 }
 @media only screen and (max-width: 992px) {
