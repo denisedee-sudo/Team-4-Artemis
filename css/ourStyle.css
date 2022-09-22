@@ -10,6 +10,24 @@ h3{
 .pointer{
   cursor: pointer;
 }
+.fb-grid{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+  grid-column-gap: 25px;
+  grid-row-gap: 2px;
+  background-color: rgb(255, 255, 255, 76);
+}
+@media only screen and (max-width: 992px) {
+  .fb-grid{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    grid-column-gap: 25px;
+    grid-row-gap: 20px;
+    background-color: rgb(255, 255, 255, 76);
+  }
+}
 /* Custom Fonts Start*/
       /*  CSS rules to specify families:
       font-family: 'Josefin Sans', sans-serif;
