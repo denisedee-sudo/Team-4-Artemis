@@ -192,12 +192,13 @@
                         <label for="" class="py-2 mb-1">Do you think you might be pregnant now?</label>
                         <br>
                         <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="1a" id="inlineRadio1a" value="option1">
-                        <label class="form-check-label" for="inlineRadio1a">Yes</label>
+                            <input class="form-check-input" type="radio" name="1a" id="inlineRadio1a" value="Yes">
+                            <label class="form-check-label" for="inlineRadio1a">Yes</label>
                         </div>
+
                         <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="1a" id="inlineRadio2a" value="option2">
-                        <label class="form-check-label" for="inlineRadio2a">No</label>
+                            <input class="form-check-input" type="radio" name="1a" id="inlineRadio2a" value="No">
+                            <label class="form-check-label" for="inlineRadio2a">No</label>
                         </div>
                         <br><br>
 
@@ -206,11 +207,11 @@
                         <label for="" class="py-2 mb-1">Do you smoke cigarettes?</label>
                         <br>
                         <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                            <input class="form-check-input" type="radio" name="2a" id="inlineRadio1" value="option1">
                             <label class="form-check-label" for="inlineRadio1">Yes</label>
                         </div>
                         <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                            <input class="form-check-input" type="radio" name="2a" id="inlineRadio2" value="option2">
                             <label class="form-check-label" for="inlineRadio2">No</label>
                         </div>
                      </div>
@@ -219,11 +220,11 @@
                 <label for="" class="py-2 mb-1">Have you ever taken birth control pills, or used a birth control patch, ring, or injection? </label>
                 <br>
                     <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                    <input class="form-check-input" type="radio" name="3a" id="inlineRadio1" value="option1">
                     <label class="form-check-label" for="inlineRadio1">Yes</label>
                     </div>
                     <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                    <input class="form-check-input" type="radio" name="3a" id="inlineRadio2" value="option2">
                     <label class="form-check-label" for="inlineRadio2">No</label>
                     </div>
                     <br><br>
@@ -231,11 +232,11 @@
                     <label for="" class="py-2 mb-1">Have you ever been told by a medical professional not to take hormones?</label>
                     <br>
                     <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                    <input class="form-check-input" type="radio" name="4a" id="inlineRadio1" value="option1">
                     <label class="form-check-label" for="inlineRadio1">Yes</label>
                     </div>
                     <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                    <input class="form-check-input" type="radio" name="4a" id="inlineRadio2" value="option2">
                     <label class="form-check-label" for="inlineRadio2">No</label>
                     </div>
                 </form>
@@ -782,9 +783,9 @@
             let form;
             if(inputText.value.match(email))
             {
-                return document.getElementById("ValidateEmail").validity.valid
+                document.getElementById("ValidateEmail").validity.valid = true
             }else{
-                return document.getElementById("ValidateEmail").validity.patternMismatch
+                document.getElementById("ValidateEmail").validity.patternMismatch = false
             }
     }
 
