@@ -82,7 +82,7 @@
             </div>
         </div>
         <br>
-        <div class="row">
+        <!-- <div class="row">
             <div class="col-lg-6 col-12">
                 <div class="text-center container bg-diamond">
                     <h2 class="p-3">Download Pamphlets and Infographics</h2>
@@ -99,14 +99,16 @@
                     </p>
                 </div>
             </div>        
-        </div>
+        </div> -->
         <br>
-        <div class=" col-12 pt-5 text-center bg-diamond">
-            <h2>Artemis Organization Blog</h2>
+       
+            <div class="bg-jindigo text-bubbles text-center container">
+                <h2>Artemis Organization Blog</h2>
             <p class="p-3">
                 Read more about healthy living and birth control.
             </p>
-            <hr>
+            </div>
+            <div class=" col-12 pt-5 text-center bg-diamond" id="articles">
             <div class="container p-3">
                 <div class="row">
                     <!-- start of an article preview -->
@@ -194,21 +196,23 @@ As those conversations progress or as your child ages, you can begin to include 
             </script>
     <!-- End of Messenger Plugin  -->
     <br>
-    <!-- Start of Footer -->
-    <footer class="row bg-jindigo text-bubbles p-1 text-party">
+     <!-- Start of Footer -->
+     <footer class="row bg-jindigo text-bubbles p-1 text-party">
         <div class="container-fluid bg-jindigo text-bubbles">
             <div class="row">
                 <div class="col-12 col-lg-1"></div>
                 <div class="col-12 col-lg-3">
                     <br><br>
                     <h3 class="text-maxy">JOIN US</h3>
-                    <p class="text-justify">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi dolorem, repudiandae vel, doloremque officia, quisquam culpa deserunt magnam natus nam nemo dignissimos quis! Sunt tenetur libero ut facere, quasi nisi?</p>
+                    <p class="text-justify">Artemis Organization currently has over 6,000 members, from over 180 countries. Our members are part of a powerful base of feminist, women’s rights and gender justice defenders, activists and allies, connecting, exchanging, learning and acting together for transformative change.</p>
                     <button class="btn btn-lg btn-carmine text-jindigo hover-maxy hover-big" data-bs-toggle="modal" data-bs-target="#Donate"> BE A SPONSOR NOW</button>
                 </div>
                 <div class="col-12 col-lg-3">
                     <br><br>
                     <h3 class="text-carmine">DONATE</h3>
-                    <p class="text-justify">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi dolorem, repudiandae vel, doloremque officia, quisquam culpa deserunt magnam natus nam nemo dignissimos quis! Sunt tenetur libero ut facere, quasi nisi?</p>
+                    <p class="text-justify">You can also show your support for transformative change by making a donation to Artemis Organizatio. Your valuable contribution will help sustain the work we do across the globe to support women and youth in the poorest communities to achieve sexual and reproductive health and rights.
+
+                    </p>
                     <button class="btn btn-lg btn-maxy text-jindigo hover-carmine hover-big"  data-bs-toggle="modal" data-bs-target="#Donate">DONATE NOW</button>
                 </div>
                 <div class="col-12 col-lg-4">
@@ -225,7 +229,11 @@ As those conversations progress or as your child ages, you can begin to include 
                     </a>
                     <p>Join the conversation and stay connected with the community. Receive a regular selection of feminist analysis, resources and ways to get involved with the movements.</p>
                     
-                    <button data-bs-toggle="modal" data-bs-target="#nLetter" class="btn btn-lg btn-outline-bubbles text-bubbles hover-jindigo hover-big">SIGN ME UP</button>
+                    <form action="" class="input-group">
+                        <input type="email" class="form-control" placeholder="Enter Email Address"/>
+                        <button class="btn btn-lg btn-outline-bubbles text-bubbles hover-jindigo hover-big">SIGN ME UP</button>
+                     </form>
+                    <!-- <button data-bs-toggle="modal" data-bs-target="#nLetter" class="btn btn-lg btn-outline-bubbles text-bubbles hover-jindigo hover-big">SIGN ME UP</button> -->
                 </div>
                 
             </div>
@@ -244,26 +252,49 @@ As those conversations progress or as your child ages, you can begin to include 
                 <br><br>
             </div>
             <h3 class="pt-2 text-play" >About Us</h3>
-            <h5 class="hover-big pt-1 hover-maxy text-jsan pointer" >Mission & Vision</h5>
-            <h5 class="hover-big pt-1 hover-maxy text-jsan pointer" >Our Team</h5>
-            <h5 class="hover-big pt-1 hover-maxy text-jsan pointer" >FAQ's</h5>
+            <ul class="list-unstyled mb-0 ">
+                <li class=" hover-big">
+                    <a href="About.html" class=" text-play hover-big pt-1 hover-maxy pointer text-bubbles text-decoration-none ">Who We Are</a>
+                </li>
+                <li class="hover-big">
+                    <a href="About.html#whatwedo" class=" text-play hover-big pt-1 hover-maxy pointer text-bubbles text-decoration-none ">What We Do</a>
+                </li>
+                <li class="hover-big">
+                    <a href="About.html#FAQ" class=" pt-1  text-play hover-maxy pointer text-bubbles text-decoration-none ">FAQ's</a>
+                </li> 
+            </ul>
+            
         </div>
         <div class="col-12 col-md-3 text-center">
             <div class="invisible-xs py-5">
                 <br><br>
             </div>
             <h3 class="pt-2 text-play" >Stay Informed</h3>
-            <h5 class="hover-big pt-1 hover-maxy text-jsan pointer" >Articles</h5>
-            <h5 class="hover-big pt-1 hover-maxy text-jsan pointer" >Project Highlights</h5>
+            <ul class="list-unstyled mb-0 ">
+                <li class="hover-big">
+                    <a href="Articles.html#articles" class=" text-play hover-big pt-1 hover-maxy pointer text-bubbles text-decoration-none ">Articles</a>
+                </li>
+                <li class="hover-big"   >
+                    <a href="Articles.html" class=" text-play hover-big pt-1 hover-maxy pointer text-bubbles text-decoration-none ">Project Highlights</a>
+                </li>
+            </ul>
         </div>
         <div class="col-12 col-md-3 text-center">
             <div class="invisible-xs py-5">
                 <br><br>
             </div>
             <h3 class="pt-2 text-play" >Get Involved</h3>
-            <h5 class="hover-big pt-1 hover-maxy text-jsan pointer"  data-bs-toggle="modal" data-bs-target="#Donate">Donate</h5>
-            <h5 class="hover-big pt-1 hover-maxy text-jsan pointer "  data-bs-toggle="modal" data-bs-target="#Donate" >Become a Sponsor</h5>
-            <h5 class="hover-big pt-1 hover-maxy text-jsan pointer" >Events</h5>
+            <ul class="list-unstyled mb-0 ">
+                <li class=" hover-big">
+                    <a  class=" text-play hover-big pt-1 hover-maxy pointer text-bubbles text-decoration-none " data-bs-toggle="modal" data-bs-target="#Donate">Donate</a>
+                </li>
+                <li class="hover-big">
+                    <a  class=" text-play hover-big pt-1 hover-maxy pointer text-bubbles text-decoration-none " data-bs-toggle="modal" data-bs-target="#Donate">Become a Sponsor</a>
+                </li>
+                <li class="hover-big">
+                    <a  class=" pt-1  text-play hover-maxy pointer text-bubbles text-decoration-none ">Events</a>
+                </li> 
+            </ul>
         </div>
         <hr>
         <div class="col-12 text-center">
@@ -271,6 +302,152 @@ As those conversations progress or as your child ages, you can begin to include 
         </div>
     </footer>
     <!-- End of Footer -->
+
+    <div class="modal" id="Donate">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-fullscreen-md-down modal-xl">
+            <div class="modal-content text-play">
+                <div class="modal-header bg-jindigo text-bubbles">
+                    <h2>Donate Now!</h2>
+                    <button class="btn btn-outline-carmine" data-bs-dismiss="modal">
+                        X
+                    </button>
+                </div>
+                <div class="modal-body">
+                
+                    <div class="row text-jindigo">
+                        <div class="col-1"></div>
+                        <div class="col-4">
+                            <img class="img-fluid w-100" src="ARTEMISFinal.png" alt="" >
+                        </div>
+                        <div class="col-6">
+                            <div class="row">
+                                <p class="text-start col-12 text-jindigo"> A nonprofit oraganization working with women and youth in the poorest communities to achieve sexual and reproductive health and rights.
+                                    
+                                </p>
+                            </div>
+
+                            <div class="row">
+                            <p class="text-start col-12 text-jindigo"> 
+                                We do community organizing, primary care clinics for women and youth, policy advocacy.
+                            </p>
+                            </div>
+                        </div>
+                        <hr>
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="row">
+                                <div class="col-6 col-lg-6">
+                                    <img class="img-fluid w-100" src="Images/BDO.png" alt="" >
+                                </div>
+                                <div class="col-6 col-lg-6">
+                                    <h4 > Banco De Oro</h4>
+                                    <h6>Account Name:</h6>
+                                    <h5 class="font-weight-bold">Artemis Organization</h5>
+                                    <h6>Account Number:</h6>
+                                    <h5 class="font-weight-bold">00 123 456 7890</h5>
+
+                                </div>
+                                
+                            </div>
+                            <br>
+                            <div class="row">
+                                <div class="col-6 col-lg-6">
+                                    <img class="img-fluid w-100" src="Images/robinsonsbank.png" alt="" >
+                                </div>
+                                <div class="col-6 col-lg-6">
+                                    <h4 >Robinsons Bank</h4>
+                                    <h6>Account Name:</h6>
+                                    <h5 class="font-weight-bold">Artemis Organization</h5>
+                                    <h6>Account Number:</h6>
+                                    <h5 class="font-weight-bold">00 123 456 7890</h5>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-6">
+                            
+                            <div class="row">
+                                <div class="col-6 col-lg-6">
+                                    <img class="img-fluid w-100" src="Images/Gcash.png" alt="" >
+                                </div>
+                                <div class="col-6 col-lg-6">
+                                    <h4 >Gcash</h4>
+                                    <h6>Account Name:</h6>
+                                    <h5 class="font-weight-bold">Artemis Organization</h5>
+                                    <h6>Gcash Number:</h6>
+                                    <h5 class="font-weight-bold">09 99 123 4567</h5>
+
+                                </div>
+                            </div>
+                            <br>
+                            <div class="row">
+                                <div class="col-6 col-lg-6">
+                                    <img class="img-fluid w-100" src="Images/PayPal.png" alt="" >
+                                </div>
+                                <div class="col-6 col-lg-6">
+                                    <h4 >Paypal</h4>
+                                    <h6>Paypal Email:</h6>
+                                    <h5 class="font-weight-bold">office@artemis.org</h5>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    </div>
+
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="SignIn">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-fullscreen-md-down modal-xl">
+            <div class="modal-content text-play">
+                <div class="modal-header bg-jindigo text-bubbles">
+                    <h2>Login/Sign Up</h2>
+                    <button class="btn btn-outline-carmine" data-bs-dismiss="modal">
+                        X
+                    </button>
+                </div>
+                <div class="modal-body px-3">
+                    <div class="row text-center text-jsan">
+                        <div class="col-12 col-lg-6 text-center text-play">
+                            <div class="d-grid">
+                                <button class="btn btn-diamond my-1 text-jindigo">Login with Facebook</button>
+                                <button class="btn btn-jindigo my-1 text-bubbles">Login with Twitter</button>
+                                <button class="btn btn-carmine my-1 text-bubbles">Login with Google+</button>
+                            </div>
+                        </div>
+                        <hr class="invisible-lg-up my-3">
+                        <div class="col-12 col-lg-6 text-center">
+                            <div class="d-grid">
+                                <input type="text" class="rounded my-1 form-control" placeholder="Username">
+                                <input type="text" class="rounded my-1 form-control" placeholder="Password"> 
+                                <button class="btn btn-maxy my-1">Login</button>
+                            </div>
+                        </div>
+
+                        <hr class="my-3">
+                    
+                        <div class="col-6">
+                            <h5 class="py-2 hover-carmine pointer">
+                                Sign Up
+                            </h5>
+                        </div>
+                        <div class="col-6">
+                            <h5 class="py-2 hover-carmine pointer">
+                                Forgot password?
+                            </h5>
+                        </div>
+                    
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 <script src="js\bootstrap.bundle.js"></script>
 </html>
